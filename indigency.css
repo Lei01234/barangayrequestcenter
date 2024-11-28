@@ -1,0 +1,72 @@
+body {
+     background: linear-gradient(to right, #a8e298, #76b894);
+  
+  
+  }
+  
+  h2 {
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  form {
+    background-color: #fcfcfc4b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  
+     /* header*/
+.navbar {
+  background: linear-gradient(to right, #98d189, #76b894);
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+/* Style the unordered list inside the navbar */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; /* Spread the items */
+}
+
+
+.navbar ul li {
+  display: inline;
+}
+
+/* Style the links */
+.navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+/* Change color on hover */
+.navbar ul li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add responsiveness for mobile screens */
+@media screen and (max-width: 600px) {
+  .navbar ul {
+      flex-direction: column;
+  }
+
+  .navbar ul li {
+      text-align: center;
+      padding: 8px;
+  }
+}

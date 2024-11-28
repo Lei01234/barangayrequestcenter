@@ -1,0 +1,62 @@
+@media print {
+    input {
+      display: none; /* Hide input fields */
+    }
+
+    .printable-text {
+      display: block; /* Show text equivalent */
+      position: absolute;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      color: black;
+    }
+
+    
+
+    
+  body * {
+    visibility: hidden; /* Hide everything */
+  }
+  #printable-area, #printable-area * {
+    visibility: visible; /* Show only the printable area */
+  }
+  #printable-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width for printing */
+    height: auto;
+  }
+
+  
+  }
+
+  .printable-text {
+    display: none; /* Hide text by default (only show during print) */
+  }
+
+  .btn btn-primary mt-3{
+    display: none;
+  }
+
+  #printable-area {
+    position: relative;
+    width: 600px;
+    height: 800px;
+    border: 1px solid #ccc;
+    margin: auto;
+  }
+  img {
+    position: absolute;
+    z-index: 0;
+  }
+  input {
+    position: absolute;
+    z-index: 1;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+
+  
+
+ 
